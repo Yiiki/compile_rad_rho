@@ -77,7 +77,7 @@ end select
 ! +----+----+----+----+----+
 ! ^ mesh grid point
 ! 1    2    3    4 .. nseg nsiz
-nsiz=min(n1,n2,n3)+1
+nsiz=min(n1/2,n2/2,n3/2)+1
 nseg=nsiz-1
 dr=rmax/nseg
 allocate(lr(nsiz),hr(nsiz),cn(nsiz))
